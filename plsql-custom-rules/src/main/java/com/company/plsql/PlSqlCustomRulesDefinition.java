@@ -6,19 +6,18 @@ public class PlSqlCustomRulesDefinition extends CustomPlSqlRulesDefinition {
     
     @Override
     public String repositoryName() {
-        return "Company";
+        return "Lululemon";
     }
 
     @Override
     public String repositoryKey() {
-        return "my-rules";
+        return "invsys-rules";
     }
 
     @Override
     public Class[] checkClasses() {
         return new Class[] {
-            ForbiddenDmlCheck.class
+        	ForbiddenCodeDetailCheck.class
         };
     }
-
 }
